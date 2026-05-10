@@ -1,0 +1,99 @@
+baseURL: "https://babasahi.github.io/"
+title: "babasahi // security notes"
+theme: PaperMod
+languageCode: "en-us"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "babasahi"
+  description: "Security writeups, notes, and research from Mauritania."
+  keywords: [security, pentesting, ctf, tryhackme, hackthebox, writeups]
+  author: "babasahi"
+  defaultTheme: dark
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  TocOpen: false
+  comments: false
+
+  homeInfoParams:
+    Title: "babasahi"
+    Content: >
+      Flutter dev by day, learning offensive security on the side.
+      Writeups, notes, and research as I go from CompTIA PT1 to OSCP and beyond.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/babasahi"
+    - name: twitter
+      url: "https://twitter.com/babasahi"
+    - name: rss
+      url: "/index.xml"
+
+  assets:
+    disableHLJS: true
+    favicon: "/favicon.ico"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: writeups
+      name: writeups
+      url: /writeups/
+      weight: 10
+    - identifier: notes
+      name: notes
+      url: /notes/
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 50
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    style: monokai
+    lineNos: false
