@@ -20,7 +20,7 @@ Flutter mobile developer based in Mauritania, transitioning into offensive secur
 - TryHackMe Jr Penetration Tester path
 - Dan Boneh's Cryptography I
 - CryptoHack challenges
-- CompTIA PenTest+ (PT1) — target: late June 2026
+- CompTIA PenTest+ (PT1) — target: late June 2027
 - OSCP — target: 2027
 
 **Find me**
